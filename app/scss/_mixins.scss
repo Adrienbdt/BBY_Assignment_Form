@@ -1,0 +1,33 @@
+// target - conversion to em by dividing /16
+@media (min-width: 64em) {
+}
+
+$breakpoints-up: (
+  // 640px
+  "medium": "40em",
+  // 1024px
+  "large": "64em",
+  // 1400px
+  "xlarge": "87.5em"
+);
+
+$breakpoints-down: (
+  // * < 640px -- 639 / 16
+  "small": "39.9375em",
+  // * < 1024px -- 1023/16
+  "medium": "63.9375em",
+  // * < 1400px -- 1399/16
+  "large": "87.5em"
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

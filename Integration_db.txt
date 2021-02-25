@@ -1,0 +1,10 @@
+In order to send our data to a database, multiple steps are required:
+
+-	We have performed a client-side validation of our form using Javascript, we would need to perform another validation of our data using server side scripting (PHP could an option)
+-	Once we have validated the data on both client side and server side, we are able to send it to be stored inside our existing relational database (SQL would be the best option)
+-	Our table could be named ps5_signup and would be composed of the following fields:
+
+	•	First_Name (varchar(25))
+	•	Last_Name (varchar(25))
+	•	Email (email would be our primary key, allowing us to cross reference data) (varchar(20))
+	•	Phone (varchar(14))

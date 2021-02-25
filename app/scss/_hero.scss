@@ -1,0 +1,113 @@
+.hero {
+  &__sec {
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.25em;
+
+    h1 {
+      font-size: 1.8em;
+    }
+
+    background-color: $lightgrey;
+
+    > div {
+      margin: 100px 0;
+    }
+
+    // Breakpoints
+    @include breakpoint-down(large) {
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0;
+
+      > div {
+        margin: 0 !important;
+      }
+
+      .hero__text {
+        margin: 0;
+        padding: 0;
+      }
+
+      &__text {
+        text-align: left;
+        padding-top: 0 auto !important;
+        padding-right: 50px;
+        margin-top: 0px !important;
+      }
+    }
+
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0;
+
+      > div {
+        margin: 0 !important;
+      }
+
+      .hero__text {
+        margin: 0;
+        padding: 20px 20px 20px;
+      }
+
+      &__text {
+        text-align: left;
+        padding-top: 0 auto !important;
+        padding-right: 0;
+        margin-top: 0px !important;
+      }
+    }
+
+    @include breakpoint-down(medium) {
+      .hero__text_button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  // Hero Image Desktop
+  &__image {
+    background-image: url("../../images/PS5.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 800px;
+    min-height: 440px;
+  }
+
+  // Hero Image Mobile
+  &__image-mobile {
+    background-image: url("./../images/ps5_mob.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 90%;
+    min-height: 250px;
+    padding-top: 100px;
+  }
+
+  // Side text Hero Image
+  &__text {
+    text-align: left;
+    padding-top: 100px;
+    padding-right: 50px;
+  }
+
+  &__text_button {
+    width: 100px;
+    display: inline-block;
+    margin-top: 25px;
+    background-color: $blue;
+    padding: 15px 24px;
+    color: $white;
+
+    a {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+}

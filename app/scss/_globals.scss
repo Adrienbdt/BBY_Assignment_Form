@@ -1,0 +1,147 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-size: $font-medium;
+  font-family: "Cairo", sans-serif;
+  min-height: 100vh;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+//Flexbox section
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-r {
+    justify-content: flex-end;
+  }
+
+  &-jc-sa {
+    justify-content: space-around;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+// Button
+button,
+.button {
+  padding: 15px 24px;
+  background-color: $blue;
+  color: $white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: $darkBlue;
+}
+
+// Visibility
+.hide-mobile {
+  // includes tablet
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+// Search Bar Top
+.search {
+  display: flex;
+  // flex-wrap: wrap;
+  align-items: flex-end;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+.search input {
+  min-width: 400px;
+  display: inline-block;
+  outline: none;
+  border: 0;
+  padding: 1px 2px 1px 12px;
+  height: 48px;
+  margin-right: 0;
+}
+
+.search button {
+  display: inline-block;
+  outline: none;
+  margin-left: 0;
+  border: 0;
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+  height: 48px;
+  width: 48px !important;
+}
+
+.search button i {
+  color: $blue;
+}
+
+// Footer Subscribe input
+.footer_sub {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 0.5em;
+}
+
+.footer_sub > input {
+  display: inline-block;
+  outline: none;
+  border: 0;
+  padding: 1px 2px 1px 12px;
+  height: 48px;
+  margin-right: 0;
+}
+
+.footer_sub button {
+  display: inline-block;
+  outline: none;
+  margin-left: 0;
+  border: 0;
+  background-color: $blue;
+  margin: 0;
+  padding: 0;
+  height: 48px;
+  width: 84px;
+}
+
+.footer_sub button i {
+  color: $blue;
+}

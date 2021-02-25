@@ -1,0 +1,243 @@
+.form {
+  align-items: center;
+  padding: 3.125em;
+  margin-top: 6.25em;
+
+  input:focus {
+    outline: none !important;
+    border: 2px solid $blue;
+    box-shadow: 0 0 3px $lightgrey;
+  }
+
+  p {
+    font-size: $font-small;
+  }
+
+  a {
+    color: $blue;
+  }
+
+  // Checkbox section
+  &__section_terms {
+    scroll-behavior: smooth;
+    margin-top: 25px;
+    margin-bottom: 40px;
+
+    input {
+      position: absolute !important;
+      width: 15px;
+      height: 15px;
+      margin-left: 0;
+      border: 1px solid $greylines;
+      border-radius: unset;
+      display: flex;
+      position: relative;
+      font-size: $font-medium;
+    }
+
+    .align {
+      display: flex;
+    }
+
+    i {
+      visibility: hidden;
+      position: absolute;
+      top: 52px;
+      right: 15px;
+    }
+
+    label {
+      width: 100%;
+      margin-left: 25px;
+      // font-weight: bold;
+    }
+
+    small {
+      display: block;
+      width: 100%;
+      visibility: hidden;
+      bottom: 80px;
+    }
+  }
+
+  // Header form
+  &__title {
+    display: flex;
+    flex-direction: row;
+    background-color: $blue;
+
+    &_logo {
+      margin-left: 20px;
+    }
+
+    &_title {
+      margin-left: 3.125em;
+      color: $white;
+    }
+  }
+
+  // Full form body
+  &__element {
+    border-left: 1px solid $greylines;
+    border-bottom: 1px solid $greylines;
+    border-right: 1px solid $greylines;
+    padding: 0 30px 30px;
+    max-width: 100%;
+    width: 700px;
+    overflow: hidden;
+
+    h1 {
+      padding: 20px 0;
+      margin: 0;
+    }
+  }
+
+  // Form sections - inputs
+  &__section {
+    margin: 10px 0;
+    padding: 10px 0;
+    position: relative;
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      width: 20px;
+      margin-right: 20px;
+    }
+
+    label {
+      display: inline-block;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+
+    input {
+      border: 1px solid $greylines;
+      border-radius: 3px;
+      display: block;
+      width: 100%;
+      font-size: $font-medium;
+      height: 45px;
+      padding: 5px 10px;
+    }
+
+    i {
+      visibility: hidden;
+      position: absolute;
+      top: 52px;
+      right: 15px;
+    }
+
+    small {
+      display: block;
+      position: absolute;
+      left: 0;
+      visibility: hidden;
+    }
+  }
+
+  // Success Messages
+  .success {
+    input {
+      border-color: $success;
+    }
+
+    i.fa-check {
+      visibility: visible;
+      color: $success;
+    }
+
+    small {
+      color: $success;
+      visibility: hidden;
+    }
+  }
+
+  // Error Messages
+  .error {
+    input {
+      border-color: $error;
+    }
+
+    i.fa-exclamation {
+      visibility: visible;
+      color: $error;
+      z-index: 2;
+      display: block;
+    }
+
+    small {
+      color: $error;
+      visibility: visible;
+    }
+  }
+
+  // Post Validation Message
+  #confirmation {
+    display: flex;
+    padding: 15% auto;
+    width: 100px;
+    min-height: 300px;
+    background-color: $white;
+    font-weight: bold;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  // Breakpoints
+  @include breakpoint-up(medium) {
+    .form__conf {
+      #confirmation {
+        display: flex;
+        flex-direction: column;
+        padding: 0 auto;
+        width: 600px;
+        min-height: 100px;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        background-color: $blue;
+        padding: 20px;
+        color: $white;
+        margin-bottom: 100px;
+
+        p {
+          font-size: $font-medium;
+        }
+      }
+    }
+  }
+
+  @include breakpoint-down(medium) {
+    padding: 0;
+
+    &__element {
+      width: 100% !important;
+    }
+  }
+
+  @include breakpoint-down(small) {
+    margin-top: 0 !important;
+
+    .form__conf {
+      height: 200px !important;
+      display: flex;
+      align-items: center !important;
+      justify-content: center;
+    }
+
+    #confirmation {
+      background-color: $white;
+      color: $darkBlue;
+      width: 250px;
+      min-height: 3.125em;
+      display: none;
+      padding: 20px;
+      flex-direction: column;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="sassComp/style.css" />
+    <script defer src="app/js/script.js"></script>
+
+    <title>Best Buy: Shop Online For Deals</title>
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="blue">
+      <nav class="clear-mobile">
+
+<div class="overlay"></div>
+
+        <!-- Top level links -->
+        <div class="flex flex-jc-r flex-ai-c hide-mobile">
+          <div class="header__links_top">
+            <a href="#">Order Status</a>
+            <a href="#">Blog</a>
+            <a href="#">Best Buy Buisness</a>
+            <a href="#">Français</a>
+          </div>
+        </div>
+
+        <div class="flex flex-jc-sb flex-ai-c">
+          <div class="logoSearch">
+          <!-- BB Logo -->
+          <a href="https://www.bestbuy.ca/en-ca" class="header__mainLogo">
+            <img src="images/logo.png" alt="Best Buy"
+          /></a>
+
+          <!-- Search Bar -->
+          <div class="hide-mobile">
+          <form class="search" id="desk-search" action="">
+            <input type="text" placeholder="Search Best Buy" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        </div>
+
+
+          <!-- Right Options -->
+          <div class="header__links_middle">
+            <a href="#">
+              <svg class="white" viewbox="0 0 32 32">
+                <path
+                  d="M27.92,12.2h-3.5a.91.91,0,0,0,0,1.81h3.5a.23.23,0,0,1,.24.23V27.05a.24.24,0,0,1-.24.24H23.28V23a1.4,1.4,0,0,0-1.4-1.4h-9A1.34,1.34,0,0,0,11.55,23v4.25H7A.25.25,0,0,1,6.72,27V16.4H21.23a.91.91,0,0,0,.91-.91V3.81a.9.9,0,0,0-.9-.91H6.58A.9.9,0,0,0,6,3.15L2.32,6.59A.91.91,0,0,0,2,7.25V12a.91.91,0,0,0,.27.65l2.63,2.56s0,.08,0,.13V27A2.06,2.06,0,0,0,7,29.1h21a2,2,0,0,0,2-2.05V14.24A2,2,0,0,0,27.92,12.2ZM3.84,7.64l3.1-2.93H20.33v9.88H6.94l-3.1-3ZM21.47,27.29H18.26V23.45h3.21Zm-8.11-3.84h3.09v3.84H13.36ZM7.11,9.55a.91.91,0,1,1-.91-.9A.9.9,0,0,1,7.11,9.55Z"
+                ></path>
+              </svg>
+              <span class="hide-mobile">Stores</span>
+            </a>
+            <a href="#">
+              <svg class="white" viewbox="0 0 32 32">
+                <path
+                  d="M12.14,12A3.86,3.86,0,1,1,16,15.87,3.85,3.85,0,0,1,12.14,12Zm13.93,12.3V23.08A8.71,8.71,0,0,0,23,16.44a1,1,0,1,0-1.25,1.46,6.8,6.8,0,0,1,2.39,5.18v3.13a13,13,0,0,1-16.28,0V23.08a6.83,6.83,0,0,1,4.67-6.45,5.8,5.8,0,1,0-1.41-1.52,8.78,8.78,0,0,0-5.19,8v1.25A13.08,13.08,0,1,1,29.08,16,13,13,0,0,1,26.07,24.33ZM16,1A15,15,0,1,0,31,16,15,15,0,0,0,16,1Z"
+                ></path>
+              </svg>
+              <span class="hide-mobile">Account</span>
+            </a>
+            <a href="#">
+              <svg class="white" viewbox="0 0 32 32">
+                <path
+                  d="M26.8,26.22a1.91,1.91,0,1,1-1.91-1.95h.17a1.72,1.72,0,0,1,1.74,2Zm-15.15,2a2,2,0,1,1,1.9-2A1.93,1.93,0,0,1,11.65,28.17Zm-1.3-8.59h16.1a.91.91,0,0,0,.87-.7L30,7.51a1,1,0,0,0-.17-.78.9.9,0,0,0-.71-.35H10.39a.92.92,0,0,0,0,1.84H28l-2.23,9.53H10.35l-.18,0-3.23-15A.91.91,0,0,0,6.06,2H2.9a.92.92,0,0,0,0,1.83H5.34L8.47,18.39a3.27,3.27,0,0,0,.33,5.45A3.8,3.8,0,0,0,8,26.22a3.7,3.7,0,1,0,7.39,0,3.82,3.82,0,0,0-.55-2h7a3.82,3.82,0,0,0-.54,2,3.7,3.7,0,1,0,7.39,0A3.57,3.57,0,0,0,27.05,23a4,4,0,0,0-2.06-.6H10.35a1.43,1.43,0,0,1,0-2.85Z"
+                ></path>
+              </svg>
+              <span class="hide-mobile">Cart</span></a
+            >
+
+          <!-- <a href="#">Shop</a>
+          <a href="#">Brands</a>
+          <a href="#">Deals</a>
+          <a href="#">Services</a>
+          <a href="#">Order Status</a>
+          <a href="#">Blog</a>
+          <a href="#">Best Buy Business</a>
+          <a href="#">Français</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Top Left Links (below BB Logo) -->
+        <div class="header__links_bottom clear-mobile">
+          <!-- Hamburger menu -->
+          <div class="hide-desktop">
+          <a href="#" class="header__hamburger">
+            <span class="hamb"></span>
+            <span class="hamb"></span>
+            <span class="hamb"></span>
+          </a>
+        </div>
+        <!--addition left mobile menu  -->
+        <div class="header__mobile-menu">
+
+        <ul class="mobile-menu-list">
+          <li>
+          <a href="#">Account</a>
+          </li>
+          <li>
+          <a href="#">Shop</a>
+          </li>
+          <li>
+          <a href="#">Brands</a>
+          </li>
+          <li>
+          <a href="#">Deals</a>
+          </li>
+          <li>
+          <a href="#">Services</a>
+          </li>
+          <li>
+          <a href="#">Order Status</a>
+          </li>
+          <li>
+          <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          </ul>
+        </div>
+        <!--addition left mobile menu  -->
+        <div class="hamburger-link hide-desktop"><a href="#">Menu</a></div>
+          <div class="hide-mobile">
+          <a href=""> Shop <i class="fas fa-chevron-down"></i></a>
+          <a href="">Brands <i class="fas fa-chevron-down"></i></a>
+          <a href="">Deals <i class="fas fa-chevron-down"></i></a>
+          <a href="">Services <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <!-- Search bar mobile version -->
+        <div class="search-bar-mobile hide-desktop">
+          <form class="search" action="">
+            <input style="width: 0%;" type="text" placeholder="Search Best Buy" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero__sec flex">
+      <!-- Image Desktop -->
+      <div class="hero__image hide-mobile"></div>
+      <!-- Image Mobile -->
+      <div class="hero__image-mobile hide-desktop"></div>      
+      <div class="hero__text">
+        <h1>SONY PLAYSTATION 5</h1>
+        <h2>Entertainment like you have never experienced before</h2>
+        <p>Get your chance to own your Playstation 5 on day one with Best Buy</p>
+        <div class="hero__text_button">
+        <a href="#signup">Sign Up</a>
+      </div>
+      </div>
+
+    </section>
+
+
+    <!-- SIGN UP FORM -->
+    <article class="form flex flex-jc-c">
+    <form action="" id="element">
+      <div class="form__title">
+        <div class="form__title_logo">          
+          <a name="signup" href="#" class="header__mainLogo">
+            <img src="images/logo.png" alt="Best Buy"/>
+          </a>
+        </div>
+        
+      </div>
+      <div class="form__element">
+      <div class="form__section">
+        <label for="fname">First Name *</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+        />
+        <i class="fas fa-check"></i>
+        <i class="fas fa-exclamation"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form__section">
+        <label for="lname">Last Name *</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+        />
+        <i class="fas fa-check"></i>
+        <i class="fas fa-exclamation"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form__section">
+        <label for="email">Email *</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+        />
+        <i class="fas fa-check"></i>
+        <i class="fas fa-exclamation"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form__section">
+        <label for="phone">Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+        />
+        <i class="fas fa-check"></i>
+        <i class="fas fa-exclamation"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form__section_terms">
+        <input
+        type="checkbox"
+        id="agreement"
+        name="agreement"
+      />
+        <label for="agree">Any personal information you give us will be handled according to our <a href="#">Privacy Policy</a>.
+        </label>
+
+        <i class="fas fa-check"></i>
+        <i class="fas fa-exclamation"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form__section">
+        <button id="submitBtn" type="submit">Register</button>
+      </div>
+      <p>* Mandatory fields</p>
+    </div>
+  </form>
+<!-- Confirmation section -->
+  <section class="form__conf">
+    <div id="confirmation">
+    <div id="confMessage"></div>
+  </div>
+  </section>
+    </article>
+
+
+    <!-- FOOTER -->
+<footer>
+  <div class="footer">
+    <div class="footer__left flex flex-jc-sa">
+
+      <div class="section">
+        <h3 class="foot_sec_title">Customer Support</h3>
+          <div class="wrapper">
+          <ul>
+            <li><a href=#>Contact Us</a></li>
+            <li><a href=#>Help Centre</a></li>
+            <li><a href=#>Returns and Exchanges</a></li>
+            <li><a href=#>Best Buy Financing</a></li>
+            <li><a href=#>Best Buy Gift Card</a></li>
+          </ul>
+      </div>
+      </div>
+      
+      <div class="section">
+        <h3 class="foot_sec_title">Account</h3>
+          <div class="wrapper">
+          <ul>
+            <li><a href=#>Order Status</a></li>
+            <li><a href=#>Manage Account</a></li>
+            <li><a href=#>Email Preferences</a></li>
+          </ul>
+      </div>
+      </div>
+      
+      <div class="section">
+        <h3 class="foot_sec_title">Services</h3>
+          <div class="wrapper">
+        <ul>
+          <li><a href=#>Geek Squad</a></li>
+          <li><a href=#>Trade-In Program</a></li>
+          <li><a href=#>Electronics Recycling</a></li>
+          <li><a href=#>Assured Living</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="section">
+        <h3 class="foot_sec_title">About Us</h3>
+          <div class="wrapper">
+        <ul>
+          <li><a href=#>Careers</a></li>
+          <li><a href=#>Corporate Information</a></li>
+          <li><a href=#>About Best Buy marketplace</a></li>
+          <li><a href=#>Sell on Best Buy Marketplace</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="section">
+        <h3 class="foot_sec_title">International Sites</h3>
+          <div class="wrapper">
+        <ul>
+          <li><a href=#>Best Buy Mexico</a></li>
+          <li><a href=#>Best Buy US</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="section">
+        <h3 class="foot_sec_title">Mobiles Apps</h3>
+          <div class="wrapper">
+            <ul>
+              <li><a href=#>Android App</a></li>
+              <li><a href=#>iOS App</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="footer__right flex">
+      <div class="section">
+      <h3>Be the first to know</h3>
+      <p>Sign up to stay in the loop about the hottest deals, coolest new products, and exclusive sales events.
+      </p>
+      <form class="footer_sub" action="" method="">
+        <input class="" type="email" name="email_signup_footer" id="signup_footer" placeholder="Email Address">
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© Best Buy Canada Ltd. 8800 Glenlyon Parkway, Burnaby, BC V5J 5K3</p>
+      <a href="#">Terms & Conditions</a><span> | </span>
+      <a href="#">Conditions of Use</a><span> | </span>
+      <a href="#">Online Policies</a><span> | </span>
+      <a href="#">Interest-Based Ads</a><span> | </span>
+      <a href="#">Privacy Policy</a><span> | </span>
+      <a href="#">Accessibility Policy</a><span> | </span>
+      <a href="#">Geek Squad Terms & Conditions
+      </a><span> | </span>
+      <a href="#">Product Recalls</a><span> | </span>
+      <a href="#">Credits</a>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+</html>
+
+
+
+
