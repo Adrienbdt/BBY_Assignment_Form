@@ -428,7 +428,7 @@ button:hover {
 }
 
 .hero__image {
-  background-image: url("../../images/PS5.png");
+  background-image: url("../images/PS5.png");
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -437,7 +437,7 @@ button:hover {
 }
 
 .hero__image-mobile {
-  background-image: url("../../images/ps5_mob.jpg");
+  background-image: url("../images/ps5_mob.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
